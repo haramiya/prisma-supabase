@@ -1,0 +1,1336 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["multiSchema"]
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+  schemas   = ["auth", "public"]
+}
+
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model audit_log_entries {
+// @@schema("auth")
+// }
+
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model flow_state {
+// @@schema("auth")
+// }
+
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model identities {
+// @@schema("auth")
+// }
+
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model instances {
+// @@schema("auth")
+// }
+
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model mfa_amr_claims {
+// @@schema("auth")
+// }
+
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model mfa_challenges {
+// @@schema("auth")
+// }
+
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model mfa_factors {
+// @@schema("auth")
+// }
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model one_time_tokens {
+// @@schema("auth")
+// }
+
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model refresh_tokens {
+// @@schema("auth")
+// }
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model saml_providers {
+// @@schema("auth")
+// }
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model saml_relay_states {
+// @@schema("auth")
+// }
+
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model schema_migrations {
+// @@schema("auth")
+// }
+
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+// model sessions {
+// @@schema("auth")
+// }
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+/// This model contains an expression index which requires additional setup for migrations. Visit https://pris.ly/d/expression-indexes for more info.
+// model sso_domains {
+// @@schema("auth")
+// }
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+/// This model contains an expression index which requires additional setup for migrations. Visit https://pris.ly/d/expression-indexes for more info.
+// model sso_providers {
+// @@schema("auth")
+// }
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+/// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+/// This model contains an expression index which requires additional setup for migrations. Visit https://pris.ly/d/expression-indexes for more info.
+// model auth_users {
+// @@map("users")
+// @@schema("auth")
+// }
+
+model admins {
+  id         String       @id @db.Uuid
+  created_at DateTime?    @default(now()) @db.Timestamptz(6)
+  updated_at DateTime?    @default(now()) @db.Timestamptz(6)
+  deleted_at DateTime?    @db.Timestamptz(6)
+  users      public_users @relation(fields: [id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model announcement_categories {
+  id            BigInt          @id @default(autoincrement())
+  name          String
+  created_at    DateTime?       @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime?       @default(now()) @db.Timestamptz(6)
+  deleted_at    DateTime?       @db.Timestamptz(6)
+  announcements announcements[]
+
+  @@schema("public")
+}
+
+model announcements {
+  id                       BigInt                   @id @default(autoincrement())
+  title                    String
+  content                  String
+  image_url                String?
+  announcement_category_id BigInt?
+  status                   publish_status?
+  publish_to               announcement_publish_to?
+  created_at               DateTime?                @default(now()) @db.Timestamptz(6)
+  updated_at               DateTime?                @default(now()) @db.Timestamptz(6)
+  deleted_at               DateTime?                @db.Timestamptz(6)
+  announcement_categories  announcement_categories? @relation(fields: [announcement_category_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model appeal_points {
+  id                              BigInt                            @id @default(autoincrement())
+  name                            String
+  created_at                      DateTime?                         @default(now()) @db.Timestamptz(6)
+  updated_at                      DateTime?                         @default(now()) @db.Timestamptz(6)
+  deleted_at                      DateTime?                         @db.Timestamptz(6)
+  exclusive_request_appeal_points exclusive_request_appeal_points[]
+  item_appeal_points              item_appeal_points[]
+
+  @@schema("public")
+}
+
+model area_warehouse_durations {
+  id           BigInt     @id(map: "area_warehouses_pkey") @default(autoincrement())
+  area_id      BigInt
+  warehouse_id BigInt
+  duration     Int
+  created_at   DateTime?  @default(now()) @db.Timestamptz(6)
+  updated_at   DateTime?  @default(now()) @db.Timestamptz(6)
+  deleted_at   DateTime?  @db.Timestamptz(6)
+  areas        areas      @relation(fields: [area_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "area_warehouses_area_id_fkey")
+  warehouses   warehouses @relation(fields: [warehouse_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "area_warehouses_warehouse_id_fkey")
+
+  @@schema("public")
+}
+
+model areas {
+  id                       BigInt                     @id @default(autoincrement())
+  name                     String
+  type                     area_type
+  day_of_weeks             Int[]
+  created_at               DateTime?                  @default(now()) @db.Timestamptz(6)
+  updated_at               DateTime?                  @default(now()) @db.Timestamptz(6)
+  warehouse_id             BigInt?
+  deleted_at               DateTime?                  @db.Timestamptz(6)
+  area_warehouse_durations area_warehouse_durations[]
+  warehouses               warehouses?                @relation(fields: [warehouse_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users                    public_users[]
+
+  @@schema("public")
+}
+
+model bouquet_images {
+  id         BigInt    @id @default(autoincrement())
+  bouquet_id BigInt?
+  url        String?
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at DateTime? @default(now()) @db.Timestamptz(6)
+  deleted_at DateTime? @db.Timestamptz(6)
+  bouquets   bouquets? @relation(fields: [bouquet_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model bouquet_items {
+  id         BigInt    @id @default(autoincrement())
+  bouquet_id BigInt?
+  item_id    BigInt?
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at DateTime? @default(now()) @db.Timestamptz(6)
+  deleted_at DateTime? @db.Timestamptz(6)
+  bouquets   bouquets? @relation(fields: [bouquet_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  items      items?    @relation(fields: [item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([bouquet_id, item_id])
+  @@schema("public")
+}
+
+model bouquets {
+  id                  BigInt                @id @default(autoincrement())
+  title               String
+  description         String?
+  content             String
+  status              publish_status?
+  sort_num            BigInt                @default(0)
+  created_at          DateTime?             @default(now()) @db.Timestamptz(6)
+  updated_at          DateTime?             @default(now()) @db.Timestamptz(6)
+  deleted_at          DateTime?             @db.Timestamptz(6)
+  bouquet_images      bouquet_images[]
+  bouquet_items       bouquet_items[]
+  collection_bouquets collection_bouquets[]
+
+  @@schema("public")
+}
+
+model categories {
+  id            BigInt          @id @default(autoincrement())
+  name          String
+  created_at    DateTime?       @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime?       @default(now()) @db.Timestamptz(6)
+  deleted_at    DateTime?       @db.Timestamptz(6)
+  flower_genera flower_genera[]
+
+  @@schema("public")
+}
+
+model chat_room_users {
+  id           BigInt        @id @default(autoincrement())
+  chat_room_id BigInt?
+  user_id      String?       @db.Uuid
+  created_at   DateTime?     @default(now()) @db.Timestamptz(6)
+  updated_at   DateTime?     @default(now()) @db.Timestamptz(6)
+  unread_count BigInt?       @default(0)
+  deleted_at   DateTime?     @db.Timestamptz(6)
+  chat_rooms   chat_rooms?   @relation(fields: [chat_room_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users        public_users? @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model chat_rooms {
+  id                                            BigInt            @id @default(autoincrement())
+  name                                          String
+  created_at                                    DateTime?         @default(now()) @db.Timestamptz(6)
+  updated_at                                    DateTime?         @default(now()) @db.Timestamptz(6)
+  last_message_id                               BigInt?
+  deleted_at                                    DateTime?         @db.Timestamptz(6)
+  chat_room_users                               chat_room_users[]
+  messages_chat_rooms_last_message_idTomessages messages?         @relation("chat_rooms_last_message_idTomessages", fields: [last_message_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  messages_messages_chat_room_idTochat_rooms    messages[]        @relation("messages_chat_room_idTochat_rooms")
+
+  @@schema("public")
+}
+
+model collection_bouquets {
+  id            BigInt       @id @default(autoincrement())
+  collection_id BigInt?
+  bouquet_id    BigInt?
+  created_at    DateTime?    @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime?    @default(now()) @db.Timestamptz(6)
+  deleted_at    DateTime?    @db.Timestamptz(6)
+  bouquets      bouquets?    @relation(fields: [bouquet_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  collections   collections? @relation(fields: [collection_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([collection_id, bouquet_id])
+  @@schema("public")
+}
+
+model collection_items {
+  id            BigInt       @id @default(autoincrement())
+  collection_id BigInt?
+  item_id       BigInt?
+  created_at    DateTime?    @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime?    @default(now()) @db.Timestamptz(6)
+  deleted_at    DateTime?    @db.Timestamptz(6)
+  collections   collections? @relation(fields: [collection_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  items         items?       @relation(fields: [item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([collection_id, item_id])
+  @@schema("public")
+}
+
+model collections {
+  id                  BigInt                @id @default(autoincrement())
+  title               String
+  description         String?
+  content             String
+  thumbnail_url       String?
+  status              publish_status?
+  sort_num            BigInt                @default(0)
+  created_at          DateTime?             @default(now()) @db.Timestamptz(6)
+  updated_at          DateTime?             @default(now()) @db.Timestamptz(6)
+  deleted_at          DateTime?             @db.Timestamptz(6)
+  collection_bouquets collection_bouquets[]
+  collection_items    collection_items[]
+
+  @@schema("public")
+}
+
+model companies {
+  id         BigInt    @id @default(autoincrement())
+  name       String
+  email      String    @unique
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at DateTime? @default(now()) @db.Timestamptz(6)
+  deleted_at DateTime? @db.Timestamptz(6)
+  drivers    drivers[]
+
+  @@schema("public")
+}
+
+model coupons {
+  id                      BigInt            @id @default(autoincrement())
+  name                    String
+  description             String?
+  code                    String            @unique
+  discount_value          BigInt
+  discount_type           discount_type
+  coupon_type             coupon_type
+  minimum_purchase_amount BigInt?
+  valid_from              DateTime?         @db.Timestamptz(6)
+  valid_until             DateTime?         @db.Timestamptz(6)
+  usage_limit             BigInt            @default(1)
+  created_at              DateTime?         @default(now()) @db.Timestamptz(6)
+  updated_at              DateTime?         @default(now()) @db.Timestamptz(6)
+  deleted_at              DateTime?         @db.Timestamptz(6)
+  florist_coupons         florist_coupons[]
+  order_coupons           order_coupons[]
+
+  @@schema("public")
+}
+
+model delivery_slip_order_items {
+  id               BigInt          @id @default(autoincrement())
+  delivery_slip_id BigInt?
+  order_item_id    BigInt?
+  created_at       DateTime?       @default(now()) @db.Timestamptz(6)
+  updated_at       DateTime?       @default(now()) @db.Timestamptz(6)
+  deleted_at       DateTime?       @db.Timestamptz(6)
+  delivery_slips   delivery_slips? @relation(fields: [delivery_slip_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  order_items      order_items?    @relation(fields: [order_item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([delivery_slip_id, order_item_id])
+  @@schema("public")
+}
+
+model delivery_slips {
+  id                        BigInt                      @id @default(autoincrement())
+  florist_id                String?                     @db.Uuid
+  start_delivery_date       DateTime                    @db.Date
+  end_delivery_date         DateTime                    @db.Date
+  issued_at                 DateTime?                   @default(now()) @db.Timestamptz(6)
+  created_at                DateTime?                   @default(now()) @db.Timestamptz(6)
+  updated_at                DateTime?                   @default(now()) @db.Timestamptz(6)
+  deleted_at                DateTime?                   @db.Timestamptz(6)
+  delivery_slip_order_items delivery_slip_order_items[]
+  florists                  florists?                   @relation(fields: [florist_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model drivers {
+  id         String       @id @db.Uuid
+  company_id BigInt?
+  role       driver_role
+  created_at DateTime?    @default(now()) @db.Timestamptz(6)
+  updated_at DateTime?    @default(now()) @db.Timestamptz(6)
+  deleted_at DateTime?    @db.Timestamptz(6)
+  companies  companies?   @relation(fields: [company_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users      public_users @relation(fields: [id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model environments {
+  id         BigInt    @id @default(autoincrement())
+  key        String    @unique
+  value      String
+  deleted_at DateTime? @db.Timestamptz(6)
+
+  @@schema("public")
+}
+
+model exclusive_item_users {
+  id         BigInt       @id @default(autoincrement())
+  item_id    BigInt
+  user_id    String       @db.Uuid
+  created_at DateTime?    @default(now()) @db.Timestamptz(6)
+  updated_at DateTime?    @default(now()) @db.Timestamptz(6)
+  deleted_at DateTime?    @db.Timestamptz(6)
+  items      items        @relation(fields: [item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users      public_users @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([item_id, user_id])
+  @@schema("public")
+}
+
+model exclusive_request_appeal_points {
+  id                   BigInt              @id @default(autoincrement())
+  exclusive_request_id BigInt?
+  appeal_point_id      BigInt?
+  created_at           DateTime?           @default(now()) @db.Timestamptz(6)
+  updated_at           DateTime?           @default(now()) @db.Timestamptz(6)
+  deleted_at           DateTime?           @db.Timestamptz(6)
+  appeal_points        appeal_points?      @relation(fields: [appeal_point_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  exclusive_requests   exclusive_requests? @relation(fields: [exclusive_request_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([exclusive_request_id, appeal_point_id], map: "exclusive_request_appeal_poin_exclusive_request_id_appeal_p_key")
+  @@schema("public")
+}
+
+model exclusive_request_grades {
+  id                   BigInt              @id @default(autoincrement())
+  exclusive_request_id BigInt?
+  grade_id             BigInt?
+  created_at           DateTime?           @default(now()) @db.Timestamptz(6)
+  updated_at           DateTime?           @default(now()) @db.Timestamptz(6)
+  deleted_at           DateTime?           @db.Timestamptz(6)
+  exclusive_requests   exclusive_requests? @relation(fields: [exclusive_request_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  grades               grades?             @relation(fields: [grade_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([exclusive_request_id, grade_id])
+  @@schema("public")
+}
+
+model exclusive_request_images {
+  id                   BigInt              @id @default(autoincrement())
+  exclusive_request_id BigInt?
+  url                  String?
+  created_at           DateTime?           @default(now()) @db.Timestamptz(6)
+  updated_at           DateTime?           @default(now()) @db.Timestamptz(6)
+  deleted_at           DateTime?           @db.Timestamptz(6)
+  exclusive_requests   exclusive_requests? @relation(fields: [exclusive_request_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model exclusive_requests {
+  id                              BigInt                            @id @default(autoincrement())
+  farm_id                         String?                           @db.Uuid
+  florist_id                      String?                           @db.Uuid
+  flower_specie_id                BigInt?
+  name                            String
+  description                     String?
+  color                           colors?
+  shipping_date                   DateTime                          @db.Date
+  quantity_per_unit               BigInt
+  listed_count                    BigInt
+  price                           BigInt
+  stem_length                     BigInt
+  status                          request_status                    @default(pending)
+  created_at                      DateTime?                         @default(now()) @db.Timestamptz(6)
+  updated_at                      DateTime?                         @default(now()) @db.Timestamptz(6)
+  deleted_at                      DateTime?                         @db.Timestamptz(6)
+  exclusive_request_appeal_points exclusive_request_appeal_points[]
+  exclusive_request_grades        exclusive_request_grades[]
+  exclusive_request_images        exclusive_request_images[]
+  farms                           farms?                            @relation(fields: [farm_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  florists                        florists?                         @relation(fields: [florist_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  flower_species                  flower_species?                   @relation(fields: [flower_specie_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model farms {
+  id                          String                  @id @db.Uuid
+  wallet_size                 BigInt?
+  contact_name                String?
+  phone                       String?
+  postal_code                 String?
+  prefecture                  String?
+  municipality                String?
+  address                     String?
+  building_name               String?
+  bank_name                   String?
+  bank_branch_name            String?
+  bank_account_type           String?
+  bank_account_number         String?
+  bank_account_name           String?
+  order_closing_days          Int?
+  order_closing_hour          DateTime?               @db.Time(6)
+  introduction                String?
+  instagram_user_name         String?
+  purchase_message            String?
+  pickup_message              String?
+  lead_id                     String?
+  reward_rank                 farms_rank              @default(new)
+  invoice_registration_number String?
+  invoice_registration_date   DateTime?               @db.Date
+  hq_postal_code              String?
+  hq_prefecture               String?
+  hq_municipality             String?
+  hq_address                  String?
+  hq_building_name            String?
+  account_manager             String?
+  created_at                  DateTime?               @default(now()) @db.Timestamptz(6)
+  updated_at                  DateTime?               @default(now()) @db.Timestamptz(6)
+  deleted_at                  DateTime?               @db.Timestamptz(6)
+  exclusive_requests          exclusive_requests[]
+  users                       public_users            @relation(fields: [id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  invoices                    invoices[]
+  receipts                    receipts[]
+  requests                    requests[]
+  subscription_requests       subscription_requests[]
+  tasks                       tasks[]
+
+  @@schema("public")
+}
+
+model favorite_count_cache {
+  item_id        BigInt    @id
+  favorite_count BigInt    @default(0)
+  deleted_at     DateTime? @db.Timestamptz(6)
+
+  @@schema("public")
+}
+
+model favorites {
+  id         BigInt        @id @default(autoincrement())
+  user_id    String?       @db.Uuid
+  item_id    BigInt?
+  created_at DateTime?     @default(now()) @db.Timestamptz(6)
+  deleted_at DateTime?     @db.Timestamptz(6)
+  items      items?        @relation(fields: [item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users      public_users? @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([user_id, item_id])
+  @@schema("public")
+}
+
+model florist_coupons {
+  id            BigInt       @id @default(autoincrement())
+  florist_id    String?      @db.Uuid
+  coupon_id     BigInt?
+  order_item_id BigInt?
+  used_at       DateTime?    @db.Timestamptz(6)
+  created_at    DateTime?    @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime?    @default(now()) @db.Timestamptz(6)
+  deleted_at    DateTime?    @db.Timestamptz(6)
+  coupons       coupons?     @relation(fields: [coupon_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  florists      florists?    @relation(fields: [florist_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  order_items   order_items? @relation(fields: [order_item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model florists {
+  id                          String                  @id @db.Uuid
+  wallet_size                 BigInt?
+  contact_name                String?
+  phone                       String?
+  postal_code                 String?
+  prefecture                  String?
+  municipality                String?
+  address                     String?
+  building_name               String?
+  bank_name                   String?
+  bank_branch_name            String?
+  bank_account_type           String?
+  bank_account_number         String?
+  bank_account_name           String?
+  unpaid                      Boolean                 @default(false)
+  pickup_message              String?
+  parking_place               String?
+  contactless_delivery_place  String?
+  introduction                String?
+  instagram_user_name         String?
+  lead_id                     String?
+  reward_rank                 florists_rank           @default(regular)
+  invoice_registration_number String?
+  invoice_registration_date   DateTime?               @db.Date
+  account_manager             String?
+  created_at                  DateTime?               @default(now()) @db.Timestamptz(6)
+  updated_at                  DateTime?               @default(now()) @db.Timestamptz(6)
+  deleted_at                  DateTime?               @db.Timestamptz(6)
+  delivery_slips              delivery_slips[]
+  exclusive_requests          exclusive_requests[]
+  florist_coupons             florist_coupons[]
+  users                       public_users            @relation(fields: [id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  order_sheets                order_sheets[]
+  requests                    requests[]
+  subscription_requests       subscription_requests[]
+
+  @@schema("public")
+}
+
+model flower_genera {
+  id             BigInt           @id @default(autoincrement())
+  category_id    BigInt?
+  name           String
+  name_furigana  String?
+  created_at     DateTime?        @default(now()) @db.Timestamptz(6)
+  updated_at     DateTime?        @default(now()) @db.Timestamptz(6)
+  deleted_at     DateTime?        @db.Timestamptz(6)
+  categories     categories?      @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  flower_species flower_species[]
+  offers         offers[]
+
+  @@schema("public")
+}
+
+model flower_species {
+  id                  BigInt               @id @default(autoincrement())
+  flower_genus_id     BigInt?
+  name                String
+  name_furigana       String?
+  recommend_min_price BigInt?
+  recommend_max_price BigInt?
+  created_at          DateTime?            @default(now()) @db.Timestamptz(6)
+  updated_at          DateTime?            @default(now()) @db.Timestamptz(6)
+  deleted_at          DateTime?            @db.Timestamptz(6)
+  exclusive_requests  exclusive_requests[]
+  flower_genera       flower_genera?       @relation(fields: [flower_genus_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  items               items[]
+
+  @@schema("public")
+}
+
+model grades {
+  id                       BigInt                     @id @default(autoincrement())
+  name                     String
+  auto_price_rate          Float?                     @default(1.0)
+  created_at               DateTime?                  @default(now()) @db.Timestamptz(6)
+  updated_at               DateTime?                  @default(now()) @db.Timestamptz(6)
+  deleted_at               DateTime?                  @db.Timestamptz(6)
+  exclusive_request_grades exclusive_request_grades[]
+  item_grades              item_grades[]
+  offers                   offers[]
+
+  @@schema("public")
+}
+
+model invoice_order_items {
+  id            BigInt       @id @default(autoincrement())
+  invoice_id    BigInt?
+  order_item_id BigInt?
+  created_at    DateTime?    @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime?    @default(now()) @db.Timestamptz(6)
+  deleted_at    DateTime?    @db.Timestamptz(6)
+  invoices      invoices?    @relation(fields: [invoice_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  order_items   order_items? @relation(fields: [order_item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([invoice_id, order_item_id])
+  @@schema("public")
+}
+
+model invoices {
+  id                  BigInt                @id @default(autoincrement())
+  farm_id             String?               @db.Uuid
+  start_shipping_date DateTime              @db.Date
+  end_shipping_date   DateTime              @db.Date
+  issued_at           DateTime?             @default(now()) @db.Timestamptz(6)
+  created_at          DateTime?             @default(now()) @db.Timestamptz(6)
+  updated_at          DateTime?             @default(now()) @db.Timestamptz(6)
+  deleted_at          DateTime?             @db.Timestamptz(6)
+  invoice_order_items invoice_order_items[]
+  farms               farms?                @relation(fields: [farm_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model item_appeal_points {
+  id              BigInt         @id @default(autoincrement())
+  item_id         BigInt?
+  appeal_point_id BigInt?
+  created_at      DateTime?      @default(now()) @db.Timestamptz(6)
+  updated_at      DateTime?      @default(now()) @db.Timestamptz(6)
+  deleted_at      DateTime?      @db.Timestamptz(6)
+  appeal_points   appeal_points? @relation(fields: [appeal_point_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  items           items?         @relation(fields: [item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([item_id, appeal_point_id])
+  @@schema("public")
+}
+
+model item_grades {
+  id         BigInt    @id @default(autoincrement())
+  item_id    BigInt?
+  grade_id   BigInt?
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at DateTime? @default(now()) @db.Timestamptz(6)
+  deleted_at DateTime? @db.Timestamptz(6)
+  grades     grades?   @relation(fields: [grade_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  items      items?    @relation(fields: [item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([item_id, grade_id])
+  @@schema("public")
+}
+
+model item_images {
+  id         BigInt    @id @default(autoincrement())
+  item_id    BigInt?
+  url        String?
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at DateTime? @default(now()) @db.Timestamptz(6)
+  deleted_at DateTime? @db.Timestamptz(6)
+  items      items?    @relation(fields: [item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model items {
+  id                   BigInt                 @id @default(autoincrement())
+  flower_specie_id     BigInt?
+  user_id              String?                @db.Uuid
+  item_type            item_type              @default(regular)
+  recommend_sort_num   BigInt?
+  avr_review_point     Float?                 @default(0)
+  total_review_count   BigInt?                @default(0)
+  name                 String
+  description          String?
+  color                colors?
+  created_at           DateTime?              @default(now()) @db.Timestamptz(6)
+  updated_at           DateTime?              @default(now()) @db.Timestamptz(6)
+  deleted_at           DateTime?              @db.Timestamptz(6)
+  bouquet_items        bouquet_items[]
+  collection_items     collection_items[]
+  exclusive_item_users exclusive_item_users[]
+  favorites            favorites[]
+  item_appeal_points   item_appeal_points[]
+  item_grades          item_grades[]
+  item_images          item_images[]
+  flower_species       flower_species?        @relation(fields: [flower_specie_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users                public_users?          @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  listings             listings[]
+  reviews              reviews[]
+
+  @@schema("public")
+}
+
+model listings {
+  id                    BigInt                  @id @default(autoincrement())
+  item_id               BigInt?
+  item_type             item_type?              @default(regular)
+  shipping_date         DateTime                @db.Date
+  quantity_per_unit     BigInt
+  listed_count          BigInt
+  price                 BigInt
+  status                listing_status
+  stem_length           BigInt
+  stock_count           BigInt
+  description           String?
+  auto_price            DateTime?               @db.Timestamptz(6)
+  created_at            DateTime?               @default(now()) @db.Timestamptz(6)
+  updated_at            DateTime?               @default(now()) @db.Timestamptz(6)
+  deleted_at            DateTime?               @db.Timestamptz(6)
+  items                 items?                  @relation(fields: [item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  order_items           order_items[]
+  requests              requests[]
+  subscription_requests subscription_requests[]
+  task_listings         task_listings[]
+  timesales             timesales[]
+
+  @@schema("public")
+}
+
+model messages {
+  id                                              BigInt        @id @default(autoincrement())
+  chat_room_id                                    BigInt?
+  user_id                                         String?       @db.Uuid
+  content                                         String
+  attachment                                      Json          @default("{}")
+  created_at                                      DateTime?     @default(now()) @db.Timestamptz(6)
+  updated_at                                      DateTime?     @default(now()) @db.Timestamptz(6)
+  deleted_at                                      DateTime?     @db.Timestamptz(6)
+  chat_rooms_chat_rooms_last_message_idTomessages chat_rooms[]  @relation("chat_rooms_last_message_idTomessages")
+  chat_rooms_messages_chat_room_idTochat_rooms    chat_rooms?   @relation("messages_chat_room_idTochat_rooms", fields: [chat_room_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users                                           public_users? @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model notifications {
+  id            BigInt        @id @default(autoincrement())
+  user_id       String?       @db.Uuid
+  order_item_id BigInt?
+  created_at    DateTime?     @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime?     @default(now()) @db.Timestamptz(6)
+  deleted_at    DateTime?     @db.Timestamptz(6)
+  order_items   order_items?  @relation(fields: [order_item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users         public_users? @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model offer_images {
+  id         BigInt    @id @default(autoincrement())
+  offer_id   BigInt?
+  url        String?
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at DateTime? @default(now()) @db.Timestamptz(6)
+  deleted_at DateTime? @db.Timestamptz(6)
+  offers     offers?   @relation(fields: [offer_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model offers {
+  id               BigInt         @id @default(autoincrement())
+  flower_genera_id BigInt?
+  user_id          String?        @db.Uuid
+  name             String?
+  description      String?
+  color            colors?
+  stem_length      BigInt?
+  price            BigInt?
+  count            BigInt?
+  delivery_dates   DateTime[]     @db.Date
+  specify          Boolean        @default(false)
+  grade_id         BigInt?
+  fixed            Boolean        @default(false)
+  created_at       DateTime?      @default(now()) @db.Timestamptz(6)
+  updated_at       DateTime?      @default(now()) @db.Timestamptz(6)
+  deleted_at       DateTime?      @db.Timestamptz(6)
+  offer_images     offer_images[]
+  flower_genera    flower_genera? @relation(fields: [flower_genera_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  grades           grades?        @relation(fields: [grade_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users            public_users?  @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model order_coupons {
+  id            BigInt       @id @default(autoincrement())
+  coupon_id     BigInt?
+  order_item_id BigInt?
+  used_at       DateTime?    @db.Timestamptz(6)
+  created_at    DateTime?    @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime?    @default(now()) @db.Timestamptz(6)
+  deleted_at    DateTime?    @db.Timestamptz(6)
+  coupons       coupons?     @relation(fields: [coupon_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  order_items   order_items? @relation(fields: [order_item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model order_items {
+  id                          BigInt                      @id @default(autoincrement())
+  user_id                     String?                     @db.Uuid
+  status                      order_item_status
+  listing_id                  BigInt?
+  name                        String?
+  shipping_date               DateTime?                   @db.Date
+  delivery_date               DateTime?                   @db.Date
+  quantity_per_unit           BigInt?
+  unit_count                  BigInt?
+  stem_length                 BigInt?
+  total_count                 BigInt?
+  optional                    Json?
+  raw_price                   BigInt?
+  raw_price_with_cavin_fee    BigInt?
+  raw_total_price_without_tax BigInt?
+  cavin_fee_without_tax       BigInt?
+  logistics_fee_without_tax   BigInt?
+  total_price_without_tax     BigInt?
+  raw_total_price_with_tax    BigInt?
+  total_price_with_tax        BigInt?
+  tax                         BigInt?
+  discount_price              BigInt?
+  created_at                  DateTime?                   @default(now()) @db.Timestamptz(6)
+  updated_at                  DateTime?                   @default(now()) @db.Timestamptz(6)
+  deleted_at                  DateTime?                   @db.Timestamptz(6)
+  delivery_slip_order_items   delivery_slip_order_items[]
+  florist_coupons             florist_coupons[]
+  invoice_order_items         invoice_order_items[]
+  notifications               notifications[]
+  order_coupons               order_coupons[]
+  listings                    listings?                   @relation(fields: [listing_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users                       public_users?               @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  order_sheet_order_items     order_sheet_order_items[]
+  order_timesales             order_timesales[]
+  receipt_order_items         receipt_order_items[]
+
+  @@schema("public")
+}
+
+model order_sheet_order_items {
+  id             BigInt        @id @default(autoincrement())
+  order_sheet_id BigInt?
+  order_item_id  BigInt?
+  created_at     DateTime?     @default(now()) @db.Timestamptz(6)
+  updated_at     DateTime?     @default(now()) @db.Timestamptz(6)
+  deleted_at     DateTime?     @db.Timestamptz(6)
+  order_items    order_items?  @relation(fields: [order_item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  order_sheets   order_sheets? @relation(fields: [order_sheet_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([order_sheet_id, order_item_id])
+  @@schema("public")
+}
+
+model order_sheets {
+  id                      BigInt                    @id @default(autoincrement())
+  florist_id              String?                   @db.Uuid
+  delivery_date           DateTime                  @db.Date
+  issued_at               DateTime?                 @default(now()) @db.Timestamptz(6)
+  created_at              DateTime?                 @default(now()) @db.Timestamptz(6)
+  updated_at              DateTime?                 @default(now()) @db.Timestamptz(6)
+  deleted_at              DateTime?                 @db.Timestamptz(6)
+  order_sheet_order_items order_sheet_order_items[]
+  florists                florists?                 @relation(fields: [florist_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model order_timesales {
+  id             BigInt      @id @default(autoincrement())
+  order_item_id  BigInt
+  discount_value BigInt
+  discount_price BigInt
+  created_at     DateTime?   @default(now()) @db.Timestamptz(6)
+  updated_at     DateTime?   @default(now()) @db.Timestamptz(6)
+  deleted_at     DateTime?   @db.Timestamptz(6)
+  order_items    order_items @relation(fields: [order_item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model receipt_order_items {
+  id            BigInt       @id @default(autoincrement())
+  receipt_id    BigInt?
+  order_item_id BigInt?
+  created_at    DateTime?    @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime?    @default(now()) @db.Timestamptz(6)
+  deleted_at    DateTime?    @db.Timestamptz(6)
+  order_items   order_items? @relation(fields: [order_item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  receipts      receipts?    @relation(fields: [receipt_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([receipt_id, order_item_id])
+  @@schema("public")
+}
+
+model receipts {
+  id                  BigInt                @id @default(autoincrement())
+  farm_id             String?               @db.Uuid
+  shipping_date       DateTime              @db.Date
+  issued_at           DateTime?             @default(now()) @db.Timestamptz(6)
+  created_at          DateTime?             @default(now()) @db.Timestamptz(6)
+  updated_at          DateTime?             @default(now()) @db.Timestamptz(6)
+  deleted_at          DateTime?             @db.Timestamptz(6)
+  receipt_order_items receipt_order_items[]
+  farms               farms?                @relation(fields: [farm_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model requests {
+  id                BigInt         @id @default(autoincrement())
+  listing_id        BigInt?
+  florist_id        String?        @db.Uuid
+  farm_id           String?        @db.Uuid
+  status            request_status @default(pending)
+  cancel_until      DateTime?      @db.Timestamptz(6)
+  answer_until      DateTime?      @db.Timestamptz(6)
+  rejected_reason   String?
+  unit_count        BigInt?
+  quantity_per_unit BigInt?
+  price             BigInt?
+  stem_length       BigInt?
+  created_at        DateTime?      @default(now()) @db.Timestamptz(6)
+  updated_at        DateTime?      @default(now()) @db.Timestamptz(6)
+  deleted_at        DateTime?      @db.Timestamptz(6)
+  farms             farms?         @relation(fields: [farm_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  florists          florists?      @relation(fields: [florist_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  listings          listings?      @relation(fields: [listing_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model reviews {
+  id          BigInt        @id @default(autoincrement())
+  user_id     String?       @db.Uuid
+  item_id     BigInt?
+  title       String
+  description String
+  rating      Float?
+  created_at  DateTime?     @default(now()) @db.Timestamptz(6)
+  updated_at  DateTime?     @default(now()) @db.Timestamptz(6)
+  deleted_at  DateTime?     @db.Timestamptz(6)
+  items       items?        @relation(fields: [item_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users       public_users? @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([user_id, item_id])
+  @@schema("public")
+}
+
+model subscription_requests {
+  id                BigInt         @id @default(autoincrement())
+  listing_id        BigInt?
+  florist_id        String?        @db.Uuid
+  farm_id           String?        @db.Uuid
+  status            request_status @default(pending)
+  cancel_until      DateTime?      @db.Timestamptz(6)
+  answer_until      DateTime?      @db.Timestamptz(6)
+  rejected_reason   String?
+  unit_count        BigInt?
+  quantity_per_unit BigInt?
+  price             BigInt?
+  stem_length       BigInt?
+  start_date        DateTime?      @db.Date
+  end_date          DateTime?      @db.Date
+  day_of_weeks      Int[]
+  created_at        DateTime?      @default(now()) @db.Timestamptz(6)
+  updated_at        DateTime?      @default(now()) @db.Timestamptz(6)
+  deleted_at        DateTime?      @db.Timestamptz(6)
+  farms             farms?         @relation(fields: [farm_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  florists          florists?      @relation(fields: [florist_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  listings          listings?      @relation(fields: [listing_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model task_listings {
+  id         BigInt    @id @default(autoincrement())
+  task_id    BigInt?
+  listing_id BigInt?
+  checked    Boolean   @default(false)
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at DateTime? @default(now()) @db.Timestamptz(6)
+  deleted_at DateTime? @db.Timestamptz(6)
+  listings   listings? @relation(fields: [listing_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  tasks      tasks?    @relation(fields: [task_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([task_id, listing_id])
+  @@schema("public")
+}
+
+model tasks {
+  id            BigInt          @id @default(autoincrement())
+  farm_id       String?         @db.Uuid
+  content       String
+  task_type     task_type
+  created_at    DateTime?       @default(now()) @db.Timestamptz(6)
+  updated_at    DateTime?       @default(now()) @db.Timestamptz(6)
+  deleted_at    DateTime?       @db.Timestamptz(6)
+  task_listings task_listings[]
+  farms         farms?          @relation(fields: [farm_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model timesales {
+  id             BigInt    @id @default(autoincrement())
+  listing_id     BigInt
+  discount_value BigInt
+  valid_from     DateTime  @db.Timestamptz(6)
+  valid_until    DateTime  @db.Timestamptz(6)
+  created_at     DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at     DateTime? @default(now()) @db.Timestamptz(6)
+  deleted_at     DateTime? @db.Timestamptz(6)
+  listings       listings  @relation(fields: [listing_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+model public_users {
+  id                   String                 @id @db.Uuid
+  role                 user_role
+  name                 String
+  email                String
+  area_id              BigInt?
+  line_nonce           String?
+  agree_terms          Boolean                @default(false)
+  verified             Boolean                @default(false)
+  avatar_url           String?
+  created_at           DateTime?              @default(now()) @db.Timestamptz(6)
+  updated_at           DateTime?              @default(now()) @db.Timestamptz(6)
+  deleted_at           DateTime?              @db.Timestamptz(6)
+  admins               admins?
+  chat_room_users      chat_room_users[]
+  drivers              drivers?
+  exclusive_item_users exclusive_item_users[]
+  farms                farms?
+  favorites            favorites[]
+  florists             florists?
+  items                items[]
+  messages             messages[]
+  notifications        notifications[]
+  offers               offers[]
+  order_items          order_items[]
+  reviews              reviews[]
+  areas                areas?                 @relation(fields: [area_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@map("users")
+  @@schema("public")
+}
+
+model warehouse_durations {
+  id                                                                  BigInt     @id @default(autoincrement())
+  departure_warehouse_id                                              BigInt
+  destination_warehouse_id                                            BigInt
+  duration                                                            Int
+  created_at                                                          DateTime?  @default(now()) @db.Timestamptz(6)
+  updated_at                                                          DateTime?  @default(now()) @db.Timestamptz(6)
+  deleted_at                                                          DateTime?  @db.Timestamptz(6)
+  warehouses_warehouse_durations_departure_warehouse_idTowarehouses   warehouses @relation("warehouse_durations_departure_warehouse_idTowarehouses", fields: [departure_warehouse_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  warehouses_warehouse_durations_destination_warehouse_idTowarehouses warehouses @relation("warehouse_durations_destination_warehouse_idTowarehouses", fields: [destination_warehouse_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([departure_warehouse_id, destination_warehouse_id])
+  @@schema("public")
+}
+
+model warehouses {
+  id                                                                           BigInt                     @id @default(autoincrement())
+  name                                                                         String
+  postal_code                                                                  String?
+  prefecture                                                                   String?
+  municipality                                                                 String?
+  address                                                                      String?
+  building_name                                                                String?
+  created_at                                                                   DateTime?                  @default(now()) @db.Timestamptz(6)
+  updated_at                                                                   DateTime?                  @default(now()) @db.Timestamptz(6)
+  contact_name                                                                 String?
+  company_name                                                                 String?
+  email                                                                        String?
+  deleted_at                                                                   DateTime?                  @db.Timestamptz(6)
+  area_warehouse_durations                                                     area_warehouse_durations[]
+  areas                                                                        areas[]
+  warehouse_durations_warehouse_durations_departure_warehouse_idTowarehouses   warehouse_durations[]      @relation("warehouse_durations_departure_warehouse_idTowarehouses")
+  warehouse_durations_warehouse_durations_destination_warehouse_idTowarehouses warehouse_durations[]      @relation("warehouse_durations_destination_warehouse_idTowarehouses")
+
+  @@schema("public")
+}
+
+enum aal_level {
+  aal1
+  aal2
+  aal3
+
+  @@schema("auth")
+}
+
+enum code_challenge_method {
+  s256
+  plain
+
+  @@schema("auth")
+}
+
+enum factor_status {
+  unverified
+  verified
+
+  @@schema("auth")
+}
+
+enum factor_type {
+  totp
+  webauthn
+  phone
+
+  @@schema("auth")
+}
+
+enum one_time_token_type {
+  confirmation_token
+  reauthentication_token
+  recovery_token
+  email_change_token_new
+  email_change_token_current
+  phone_change_token
+
+  @@schema("auth")
+}
+
+enum announcement_publish_to {
+  farm
+  florist
+
+  @@schema("public")
+}
+
+enum area_type {
+  pickup
+  deliver
+
+  @@schema("public")
+}
+
+enum colors {
+  red
+  pink
+  orange
+  yellow
+  green
+  blue
+  purple
+  white
+  black
+  mix
+
+  @@schema("public")
+}
+
+enum coupon_type {
+  all_items
+  specific_item
+  specific_farm
+
+  @@schema("public")
+}
+
+enum discount_type {
+  percentage
+  fixed_amount
+
+  @@schema("public")
+}
+
+enum driver_role {
+  pickup
+  deliver
+  admin
+
+  @@schema("public")
+}
+
+enum farms_rank {
+  new
+  harvester
+  master
+  hero
+  premium
+
+  @@schema("public")
+}
+
+enum florists_rank {
+  regular
+  silver
+  gold
+  platinum
+  diamond
+
+  @@schema("public")
+}
+
+enum item_type {
+  regular
+  offer
+  exclusive
+  subscription
+
+  @@schema("public")
+}
+
+enum listing_status {
+  active
+  inactive
+
+  @@schema("public")
+}
+
+enum order_item_status {
+  canceled
+  confirmed
+  picked_up
+  arrived_warehouse
+  departed_warehouse
+  delivered
+
+  @@schema("public")
+}
+
+enum publish_status {
+  publish
+  private
+
+  @@schema("public")
+}
+
+enum request_status {
+  pending
+  confirmed
+  rejected
+  canceled
+
+  @@schema("public")
+}
+
+enum task_type {
+  increase_lot
+  decrease_unit_count
+  increase_appeal_item
+
+  @@schema("public")
+}
+
+enum user_role {
+  admin
+  farm
+  florist
+  driver
+
+  @@schema("public")
+}
